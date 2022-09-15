@@ -9,7 +9,7 @@ RUN  unzip /opt/hivemq-${HIVEMQ_VERSION}.zip  -d /opt/ \
      && chgrp -R 0 /opt \
      && chmod -R 770 /opt
 
-FROM openjdk:11-jre-slim
+FROM eclipse-temurin:17-jre
 
 ARG HIVEMQ_VERSION
 ENV HIVEMQ_GID=10000
